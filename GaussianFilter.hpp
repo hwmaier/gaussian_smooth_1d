@@ -83,7 +83,7 @@ private:
 
     float gaussian(float sigma, int value)
     {
-        return (1.f / std::sqrtf(2.f * M_PI * sigma) * std::expf(-(value * value) / (2.f * sigma * sigma)));
+        return (1.f / (std::sqrtf(2.f * M_PI) * sigma) * std::expf(-(value * value) / (2.f * sigma * sigma)));
     }
 
 private:
